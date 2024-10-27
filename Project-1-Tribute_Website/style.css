@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    max-height: max-content;
+}
+.container{
+    background-color: #e1e2fa;
+border: 10px solid #0a1a46;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-family: sans-serif;
+overflow: hidden;
+box-sizing: border-box;
+min-height: 100vh;
+}
+
+img {
+border-radius: 50%;
+width: 400px;
+height: 400px;
+}
+
+.head{
+display: flex;
+align-items: end;
+width: 90vw;
+justify-content: space-between;
+margin-top: 40px;
+padding: 0 5px;
+
+}
+
+.intro{
+margin-bottom: 15px;
+}
+
+.head .birth{
+font-size: 30px;
+text-align: end;
+font-weight: bold;
+}
+
+.head h1{
+letter-spacing: 5px;
+font-size: 50px;
+color: #1d1e4c;
+font-weight: bold;
+}
+
+
+.contents{
+width: 80vw;
+margin: 20px;
+}
+.contents .title{
+font-size: 70px;
+font-weight: 400;
+margin-bottom: 20px;
+margin: 10px 0;
+}
+
+.content{
+font-size: 20px;
+/* line-height: 20px; */
+/* letter-spacing: 1.2px; */
+align-items: center;
+}
+.conclusion{
+margin: 25px 0;
+}
+
+.key_title{
+margin: 10px 0;
+font-weight: bold;
+font-size: 20px;
+line-height: 30px;
+letter-spacing: 1.2px;
+align-items: center;
+}
+ul li{
+margin: 25px;
+}
+
+.footer{
+text-align: end;
+width: 90vw;
+margin: 10px;
+}
+
+.container::after{
+    content: "";
+    width: 100vw;
+    height: 10px;
+    background-color: #0a1a46;
+    position: absolute;
+    top: 0;
+    position: fixed;
+
+}
+
+
+ @media only screen and (max-width: 1050px) {
+.head h1{
+font-size: 30px;
+}
+.birth{
+font-size: 25px;
+}
+
+.contents .title{
+font-size: 30px;
+}
+img{
+width: 300px;
+height: 300px;
+}
+}
+
+
+@media only screen and (max-width: 750px) {
+.head h1{
+font-size: 25px;
+}
+.birth{
+font-size: 20px;
+}
+
+.contents .title{
+font-size: 25px;
+}
+
+.content{
+font-size: 18px;
+}
+img{
+width: 200px;
+height: 200px;
+}
+
+.key_title{
+font-size: 17px;
+}
+}
+
+@media only screen and (max-width: 630px) {
+.head h1{
+font-size: 20px;
+}
+.head .birth{
+font-size: 18px;
+}
+
+.contents .title{
+font-size: 20px;
+}
+
+.content{
+font-size: 16px;
+}
+img{
+width: 150px;
+height: 150px;
+}
+
+.key_title{
+font-size: 16px;
+}
+} 
+
+
+@media only screen and (max-width: 480px) {
+.head h1{
+font-size: 18px;
+}
+.head .birth{
+font-size: 15px;
+}
+
+.contents .title{
+font-size: 17px;
+}
+
+.content{
+font-size: 15px;
+}
+img{
+width: 100px;
+height: 100px;
+}
+
+.key_title{
+font-size: 15px;
+}
+}
+
+
+@media only screen and (max-width: 480px) {
+.head h1{
+font-size: 16px;
+letter-spacing: 0;
+}
+.head .birth{
+font-size: 14px;
+}
+
+.contents .title{
+font-size: 15px;
+}
+
+.content{
+font-size: 14px;
+}
+img{
+width: 95px;
+height: 95px;
+}
+
+.key_title{
+font-size: 14px;
+}
+}
+
