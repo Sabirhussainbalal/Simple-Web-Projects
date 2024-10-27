@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Qwitcher Grypen", cursive;
+  font-style: normal;
+  font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow: hidden scroll;
+}
+
+.section_one {
+  background-image: url(static/img1.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+}
+
+.section_one .contents {
+  width: 600px;
+  background: #313534;
+  color: #fff;
+  padding: 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_one .contents .title {
+  font-size: 70px;
+}
+
+.section_one .contents .desc {
+  line-height: 0.9;
+  font-weight: bold;
+}
+
+.section_one .contents .line {
+  transform: translateY(40px);
+  background: #272b2a;
+  padding: 10px;
+  font-size: 35px;
+  box-shadow: inset 2px 0px 18px rgba(1, 1, 1, 0.5);
+}
+
+.title {
+  font-size: 60px;
+}
+.desc {
+  font-size: 30px;
+}
+
+.section_two .line {
+  font-size: 30px;
+  background: #272b2a;
+  color: #fff;
+  padding: 10px;
+  box-shadow: inset 2px 0px 18px rgba(1, 1, 1, 0.5);
+}
+
+.section_two {
+  color: #181a19;
+  background-color: #fff;
+  position: relative;
+}
+
+.section_two .content {
+  width: 100vw;
+  padding: 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_two .lines {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 30px;
+}
+
+.section_three {
+  background-image: url(static/img2.jpg);
+  height: 500px;
+}
+
+.section_four .lines {
+  justify-content: start;
+}
+
+.section_five {
+  background-image: url(static/img3.jpg);
+  height: 500px;
+}
+
+.section_seven {
+  background-image: url(static/img4.jpg);
+}
+
+.btns {
+  position: fixed;
+  z-index: 10;
+  margin: 20px;
+}
+
+.top {
+  top: 0;
+  right: 0;
+}
+
+.bottom {
+  bottom: 0;
+  right: 0;
+}
+
+a{
+  color: black;
+
+}
+
+@media screen and (max-width: 700px) {
+  .section_three,
+  .section_five {
+    height: 80vh;
+  }
+
+  .contents {
+    margin: 20px;
+    padding: 20px;
+    width: 98vw;
+  }
+}

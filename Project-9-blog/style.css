@@ -1,0 +1,223 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+  overflow: hidden scroll;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #e2e2e2;
+}
+nav img {
+  width: 150px;
+  margin: 10px;
+  position: relative;
+  z-index: 60;
+}
+
+.blur {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  opacity: 0.9;
+}
+
+header {
+  height: 60vh;
+  width: 95vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-around;
+}
+header .text{
+  padding: 0 10px;
+}
+header p{
+  margin: 10px 0;
+}
+
+header img {
+  height: 250px;
+  width: 350px;
+  border-radius: 20px;
+}
+
+.one_sec {
+  height: 150px;
+  overflow: hidden;
+  display: flex;
+  width: 90vw;
+  margin: auto;
+  border: 1px solid #e2e2e2;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.one_sec img {
+  height: 100%;
+}
+
+.content {
+  margin: 5px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow: hidden auto;
+  width: 100%;
+  padding: 30px 20px;
+}
+
+.one_sec .content{
+  height: 100%;
+} 
+
+.content .title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.content .last {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.content .last .read {
+  cursor: pointer;
+  position: relative;
+}
+
+.read::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: gray;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+.read:hover::after {
+  opacity: 1;
+}
+main {
+  width: 90vw;
+  margin: auto;
+  margin-top: 40px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: space-evenly;
+}
+.card {
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.card .content {
+  width: 300px;
+  padding: 20px;
+  margin: 0;
+  overflow: hidden auto;
+  height: 250px;
+}
+
+main .card img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+  z-index: 5;
+}
+.last {
+  color: #0a0a0aec;
+  font-size: 12px;
+}
+.card .subtitle {
+  color: #100f0fc5;
+}
+
+.box {
+  display: flex;
+  height: 400px;
+  border: 1px solid #e2e2e2;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.box_content .last{
+ width: 50%;
+}
+
+.box .content {
+ overflow: hidden auto;
+ height: 400px;
+}
+.box img {
+  height: 100%;
+  width: 55%;
+  border-top-right-radius: 10px;
+}
+
+footer {
+  width: 100vw;
+  height: 30px;
+  margin: 20px 0;
+  margin-bottom: 0;
+  border-top: 1px solid #e2e2e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: #000;
+  font-weight: bold;
+}
+
+
+
+
+
+
+@media screen and (max-width: 770px) {
+header{
+  flex-direction: column;
+}
+
+header img{
+  width: 70%;
+}
+.box{
+  flex-direction: column;
+}
+
+.box img{
+  width: 100%;
+  height: 200px;
+  border-top-right-radius: 0;
+}
+
+}

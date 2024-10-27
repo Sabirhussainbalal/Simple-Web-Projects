@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Web</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="static/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="static/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="static/favicon-16x16.png"
+    />
+    <link rel="manifest" href="static/site.webmanifest" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="#" class="form">
+        <div class="titles">
+          <p class="title">Job Application</p>
+          <p class="subtitle">(Web)</p>
+        </div>
+
+        <div class="form-control">
+          <!-- First Name -->
+          <div class="half">
+            <label for="Name">First Name</label>
+            <input
+              type="text"
+              name="Name"
+              id="Name"
+              placeholder="Enter First Name..."
+            />
+          </div>
+          <!-- Last Name -->
+          <div class="half">
+            <label for="Name">Last Name</label>
+            <input
+              type="text"
+              name="Last"
+              id="Last"
+              placeholder="Enter Last Name..."
+            />
+          </div>
+
+          <!-- Email -->
+          <div class="half">
+            <label for="Email">Email</label>
+            <input
+              type="email"
+              name="Email"
+              id="Email"
+              placeholder="Enter Email..."
+            />
+          </div>
+          <!-- Job -->
+          <div class="half">
+            <label for="job">Job Role</label>
+            <select name="job" id="job">
+              <option value="Select">Select Job Role</option>
+              <option value="Coder">Coder</option>
+              <option value="programmer">programmer</option>
+              <option value="Developer">Developer</option>
+              <option value="Engineer">Software Engineer</option>
+            </select>
+          </div>
+          <!-- Address -->
+          <div class="full">
+            <label for="adr">Address</label>
+            <input
+              type="text"
+              name="adr"
+              id="adr"
+              placeholder="Enter Address..."
+            />
+          </div>
+          <!-- City -->
+          <div class="half">
+            <label for="city">City</label>
+            <input
+              type="text"
+              name="city"
+              id="city"
+              placeholder="Enter City Name..."
+            />
+          </div>
+          <!-- Pincode -->
+          <div class="half">
+            <label for="pin">Pincode</label>
+            <input
+              type="number"
+              name="pin"
+              id="pin"
+              placeholder="Enter Pincode"
+            />
+          </div>
+          <!-- Date -->
+          <div class="half">
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date" />
+          </div>
+          <!-- Upload -->
+          <div class="half">
+            <label for="upload">Upload Your CV</label>
+            <input type="file" name="upload" id="upload" />
+          </div>
+        </div>
+        <div class="btn">
+          <button type="submit" class="button">Apply Now</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
